@@ -1,14 +1,14 @@
+def strip_punctuation_ru(s):
+    punctuations = '"! () - = + ;: /<>,.'
+    new_str = ""
+    for char in s:
+        if char in punctuations:
+            new_str += ''
+        else:
+            new_str += char
+    new_str = new_str.replace(" ", " ")
+    return " ".join(new_str.split())
 
-line = 'сегодня пасмурно ==--==.'
-import string
-string.punctuation
+print(strip_punctuation_ru(input()))
 
-
-for n in string.punctuation:
-    if n in line:
-
-        line = line.replace(n, '')
-
-
-line.strip()
 
